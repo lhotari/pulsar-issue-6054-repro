@@ -17,9 +17,18 @@ These functions use the [RandomFilterFunction](random-filter-function/src/main/j
 
 `pulsar-perf produce` is used to feed the random1-in topic. `pulsar-perf consume` is used to consume messages from the random3-in topic.
 
-## Deploying the function chain
+## Preparation
 
-Make sure that pulsar-admin is in the PATH and that Pulsar connection setting are configured in `conf/client.conf` (under the Pulsar installation directory).
+Make sure that `pulsar-admin` is in the `PATH` and that Pulsar connection setting are configured in `conf/client.conf` (under the Pulsar installation directory) or `PULSAR_CLIENT_CONF` environment variable points to a `client.conf` file for the desired target environment.
+
+### Create partitioned topics
+
+```bash
+./create_topics.sh
+```
+
+### Deploying the function chain
+
 
 Deploy the function chain with this command:
 
