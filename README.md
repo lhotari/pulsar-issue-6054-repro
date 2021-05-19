@@ -22,10 +22,10 @@ this produces messages to the `persistent://public/default/random1-in` input top
 ./produce.sh
 ```
 
-### Producing messages
+### Consuming messages
 
-this produces messages to the `persistent://public/default/random1-in` input topic
+this consumes messages from the `persistent://public/default/random3-in` topic
 
 ```bash
-./produce.sh
+./consume.sh
 ```
