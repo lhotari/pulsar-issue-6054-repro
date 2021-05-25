@@ -3,6 +3,8 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
 
 cd "$SCRIPT_DIR"
 
+./create_topics.sh
+
 if [ ! -f random-filter-function/target/random-filter-function-1.0-SNAPSHOT.jar ]; then
     (
         cd "${SCRIPT_DIR}/random-filter-function"
