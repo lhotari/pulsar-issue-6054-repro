@@ -1,0 +1,16 @@
+broker:
+  configData:
+    backlogQuotaDefaultRetentionPolicy: producer_exception
+    bookkeeperEnableStickyReads: 'true'
+    brokerDeduplicationEnabled: 'false'
+    brokerDeleteInactiveTopicsEnabled: 'false'
+    exposeConsumerLevelMetricsInPrometheus: 'false'
+    exposeTopicLevelMetricsInPrometheus: 'true'
+    managedLedgerAddEntryTimeoutSeconds: '120'
+    managedLedgerMaxEntriesPerLedger: '10'
+    managedLedgerMaxLedgerRolloverTimeMinutes: '2'
+    managedLedgerMinLedgerRolloverTimeMinutes: '0'
+    managedLedgerReadEntryTimeoutSeconds: '120'
+    topicFencingTimeoutSeconds: '5'
+    maxUnackedMessagesPerConsumer: '0'
+    maxUnackedMessagesPerSubscription: '0'    
