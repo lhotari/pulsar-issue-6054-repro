@@ -26,6 +26,7 @@ function deploy_function() {
       --inputs persistent://public/default/${name}-in \
       --output persistent://public/default/${nextname}-in \
       --jar "${SCRIPT_DIR}/random-filter-function/target/random-filter-function-1.0-SNAPSHOT.jar" \
+      --ram 134217728 \
       --classname com.github.lhotari.pulsar.RandomFilterFunction \
       --userConfig '{"pass-fraction":"'$fraction'"}'
     )
