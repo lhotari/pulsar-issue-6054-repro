@@ -21,6 +21,11 @@ These functions use the [RandomFilterFunction](random-filter-function/src/main/j
 
 Make sure that `pulsar-admin` is in the `PATH` and that Pulsar connection setting are configured in `conf/client.conf` (under the Pulsar installation directory) or `PULSAR_CLIENT_CONF` environment variable points to a `client.conf` file for the desired target environment.
 
+### Deploying test environment to minikube / Docker provided k8s
+
+Check instructions in [helm-deployment/README.md](helm-deployment/README.md).
+
+
 ### Create partitioned topics
 
 ```bash
