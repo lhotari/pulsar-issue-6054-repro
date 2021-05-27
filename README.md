@@ -1,6 +1,6 @@
 # pulsar-issue-6054-repro
 
-Repro case for [apache/pulsar#6054](https://github.com/apache/pulsar/issues/6054)
+This started as a repro case for [apache/pulsar#6054](https://github.com/apache/pulsar/issues/6054) . However, the issues seen in the repro case might be other issues and could end up being reported separately.
 
 ## Repro scenario
 
