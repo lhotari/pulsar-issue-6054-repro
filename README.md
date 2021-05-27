@@ -26,12 +26,6 @@ Make sure that `pulsar-admin` is in the `PATH` and that Pulsar connection settin
 Check instructions in [helm-deployment/README.md](helm-deployment/README.md).
 
 
-### Create partitioned topics
-
-```bash
-./create_topics.sh
-```
-
 ### Deploying the function chain
 
 
@@ -40,6 +34,9 @@ Deploy the function chain with this command:
 ```bash
 ./deploy_function_chain.sh
 ```
+
+Besides deploying the functions, the script will also create required topics.
+
 
 ## Running the scenario
 
@@ -58,3 +55,5 @@ this consumes messages from the `persistent://public/default/random3-in` topic
 ```bash
 ./consume.sh
 ```
+
+
