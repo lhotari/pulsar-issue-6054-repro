@@ -61,6 +61,7 @@ bookkeeper:
       -XX:+FlightRecorder
       -XX:FlightRecorderOptions=stackdepth=1024
       -Dio.netty.leakDetectionLevel=advanced
+      -Dio.netty.leakDetection.targetRecords=30
     PULSAR_MEM: >
       -Xms128m
       -Xmx1G
@@ -91,6 +92,7 @@ broker:
       -XX:FlightRecorderOptions=stackdepth=1024
       -Dpulsar.allocator.leak_detection=Advanced
       -Dio.netty.leakDetectionLevel=advanced
+      -Dio.netty.leakDetection.targetRecords=30
     PULSAR_MEM: >
       -Xms128m -Xmx1G -XX:MaxDirectMemorySize=1G
     PULSAR_GC: >
@@ -128,6 +130,7 @@ proxy:
       -XX:FlightRecorderOptions=stackdepth=1024
       -Dpulsar.allocator.leak_detection=Advanced
       -Dio.netty.leakDetectionLevel=advanced
+      -Dio.netty.leakDetection.targetRecords=30
     PULSAR_MEM: >
       -Xms64m -Xmx256m -XX:MaxDirectMemorySize=256m
     PULSAR_GC: >
